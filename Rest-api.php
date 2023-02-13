@@ -64,3 +64,9 @@ class ChatGPTClient
         return json_decode($response, true);
     }
 }
+
+// exmaple use of the class 
+$client = new ChatGPTClient("<API_KEY>");
+$response = $client->sendRequest("What is the meaning of life?");
+print_r($response);
+
